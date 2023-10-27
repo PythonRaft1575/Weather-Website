@@ -2,11 +2,11 @@ async function addText(text, bold = false) {
   const div = document.getElementById("div");
   if (bold) {
     const strong = document.createElement("strong");
-    strong.textContent = text;
+    strong.textContent = text + " ";
     div.appendChild(strong);
     div.appendChild(document.createElement("br")); // Add a line break
   } else {
-    div.textContent += text;
+    div.textContent += text + " ";
     div.appendChild(document.createElement("br")); // Add a line break
   }
 }
